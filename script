@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=125199593304022",
+       Image = "http://www.roblox.com/asset/?id=131314035024653",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
@@ -31,7 +31,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
 ------ Tab
      local Tab1o = MakeTab({Name = "Script Farm"})
-     local Tab1o = MakeTab({Name = "vip pro"})
+     local Tab2o = MakeTab({Name = "ho tro"})
      
 ------- BUTTON
     
@@ -51,5 +51,50 @@ AddButton(Tab2o, {
      Name = "fix lag",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+
+AddButton(Tab1o, {
+     Name = "Wazu",
+    Callback = function()
+	  getgenv().Team = "Marines"
+
+getgenv().FixCrash = true -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+
+getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))() 
+   end
+  })
+
+AddButton(Tab1o, {
+     Name = "Rubu",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuBF"))()
+   end
+  })
+
+AddButton(Tab1o, {
+     Name = "Skuna",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/sukunav9"))()
+  end
+  })
+
+AddButton(Tab1o, {
+     Name = "master",
+    Callback = function()
+	  --[[
+ WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jebblox/scriptdatabase2/main/scripts/masterhub.lua"))()
+  end
+  })
+
+AddButton(Tab1o, {
+     Name = "Andepzai",
+    Callback = function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
   end
   })
